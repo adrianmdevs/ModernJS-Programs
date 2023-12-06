@@ -10,7 +10,7 @@ let deck = [];
 
 //create a deck of cards
 for(let i= 0; i< suits.length; i++){
-    for(let j =0; j < values.length; j++){
+    for(let j =0; j< values.length; j++){
         let card = {Value: values[j], Suit: suits[i]};
         deck.push(card);
     }
@@ -22,9 +22,9 @@ for(let i= deck.length -1; i > 0; i--){
     deck[i]= deck[j];
     deck[x]=temp;
 }
-console.log('The first five cards are:');
+console.log('The first five cards are: ');
 
 //Output 5 results
 for(let i= 0; i < 5; i++){
-    console.log(`${deck[i].Value} of ${deck[i].Suit}`)
+    console.log(`${deck[i].Value} of ${deck[i].Suit}`);
 }
